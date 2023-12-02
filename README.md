@@ -14,6 +14,22 @@ Then run:
 ./create_calculator_package.sh
 ```
 
+Must have: 
+
+```bash
+t@Air-de-T scaffold_julia % tree
+├── Calculator.jl
+│   ├── Project.toml
+│   ├── src
+│   │   ├── Calculator.jl
+│   │   ├── add.jl
+│   │   └── subtract.jl
+│   └── test
+│       └── runtests.jl
+├── README.md
+└── create_calculator_package.sh
+```
+
 Install (in Julia's `Pkg` REPL, see https://pkgdocs.julialang.org/v1/getting-started/#Basic-Usage): 
 
 ```julia
