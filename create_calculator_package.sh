@@ -8,8 +8,8 @@
 
 
 # Create a folder for the Calculator package
-mkdir Calculator
-cd Calculator || exit
+mkdir Calculator.jl
+cd Calculator.jl || exit
 
 # Create the src and test directories
 mkdir src
