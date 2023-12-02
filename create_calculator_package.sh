@@ -23,8 +23,19 @@ touch src/subtract.jl
 # Create necessary files within the test directory
 touch test/runtests.jl
 
-# Optionally, create a README.md file
-touch README.md
+# Create Project.toml and populate it with initial information
+cat <<EOF > Project.toml
+name = "Calculator"
+uuid = "$(uuidgen)"
+authors = ["Your Name <your@email.com>"]
+version = "0.1.0"
+
+[deps]
+# Dependencies, if any, will be listed here
+
+[compat]
+julia = "1.6"  # Minimum Julia version required by the package
+EOF
 
 # Populate files with initial code
 
