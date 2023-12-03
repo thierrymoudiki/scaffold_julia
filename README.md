@@ -46,3 +46,7 @@ https://pkgdocs.julialang.org/v1/environments/
 Registering: 
 
 https://pkgdocs.julialang.org/v1/creating-packages/#Registering-packages
+
+Note to self: 
+
+https://stackoverflow.com/questions/65814036/a-python-as-equivalent-in-julia
