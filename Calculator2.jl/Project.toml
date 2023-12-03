@@ -1,0 +1,10 @@
+name = "Calculator2"
+uuid = "05FD6518-9D87-4D02-A8E3-41274536F944"
+authors = ["Your Name <your@email.com>"]
+version = "0.1.0"
+
+[deps]
+# Dependencies, if any, will be listed here
+
+[compat]
+julia = "1.6"  # Minimum Julia version required by the package

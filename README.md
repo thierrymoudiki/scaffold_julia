@@ -36,6 +36,8 @@ Install (in Julia's `Pkg` REPL, see https://pkgdocs.julialang.org/v1/getting-sta
 add https://github.com/username/Calculator.git
 ```
 
+See also: https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages
+
 Environments: 
 
 https://pkgdocs.julialang.org/v1/getting-started/#Getting-Started-with-Environments
