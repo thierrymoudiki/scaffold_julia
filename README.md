@@ -30,13 +30,12 @@ t@Air-de-T scaffold_julia % tree
 └── create_calculator_package.sh
 ```
 
-Install (in Julia's `Pkg` REPL, see https://pkgdocs.julialang.org/v1/getting-started/#Basic-Usage): 
+Install using Julia console (in Julia's `Pkg` REPL, see https://pkgdocs.julialang.org/v1/getting-started/#Basic-Usage and https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages): 
 
 ```julia
+]
 add https://github.com/username/Calculator.git
 ```
-
-See also: https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages
 
 Environments: 
 
