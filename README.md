@@ -14,7 +14,7 @@ Then run:
 ./create_calculator_package.sh
 ```
 
-Must have: 
+Must have (if package's name is `Calculator`): 
 
 ```bash
 t@Air-de-T scaffold_julia % tree
