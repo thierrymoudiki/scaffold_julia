@@ -1,20 +1,18 @@
-
-
 # Julia package scaffolding
 
-In a fresh directory, make `create_calculator_package.sh` executable: 
+In a fresh directory, make `script.sh` executable (at the **command line**): 
 
 ```bash
-chmod +x create_calculator_package.sh
+chmod +x script.sh
 ```
 
 Then run: 
 
 ```bash
-./create_calculator_package.sh
+./script.sh
 ```
 
-Must have (if package's name is `Calculator`): 
+Must have (if package's name is `Calculator`) the following **folders' structure**: 
 
 ```bash
 t@Air-de-T scaffold_julia % tree
@@ -27,7 +25,7 @@ t@Air-de-T scaffold_julia % tree
 │   └── test
 │       └── runtests.jl
 ├── README.md
-└── create_calculator_package.sh
+└── script.sh
 ```
 
 Install using Julia console (in Julia's `Pkg` REPL, see https://pkgdocs.julialang.org/v1/getting-started/#Basic-Usage and https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages): 
