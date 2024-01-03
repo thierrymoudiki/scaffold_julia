@@ -31,9 +31,9 @@ EOF
 # Function to create modules
 function create_module() {
     local module_name
-    read -p "Enter module name (or 'done' to exit): " module_name
+    read -p "Enter module name without the extension .jl (or 'q' to finish): " module_name
 
-    while [ "$module_name" != "done" ]; do
+    while [ "$module_name" != "q" ]; do
         # Create a new module file within the src directory
         touch src/"$module_name".jl
         
@@ -42,15 +42,32 @@ function create_module() {
 module $module_name
 
 # Define a basic function (you can modify this part as needed)
-function my_function()
+function $module_name()
     println("This is $module_name")
 end
 
 end # module
 EOF
 
-        # Prompt for the next module name or 'done' to exit
-        read -p "Enter another module name (or 'done' to exit): " module_name
+        # Create a test file for the module
+        touch test/test_$module_name.jl
+
+        # Populate the test file with basic test cases
+        cat <<EOF > test/test_$module_name.jl
+using Test
+using .\$module_name  # Load the module to be tested
+
+# Define test cases for $module_name module
+@testset "Test $module_name module" begin
+    @testset "Example tests" begin
+        # Add your test cases here
+        @test true
+    end
+end
+EOF
+
+        # Prompt for the next module name or 'q' to exit
+        read -p "Enter another module name (or 'q' to exit): " module_name
     done
 }
 
